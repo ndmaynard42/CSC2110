@@ -6,8 +6,9 @@
 #include <fstream>
 using namespace std;
 
-struct ReadFile
-{
+class ReadFile
+{ 
+   public:
    ifstream input_file;
    bool _eof;
    bool closed;
