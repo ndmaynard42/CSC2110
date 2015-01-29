@@ -17,7 +17,7 @@ String::String(const char* char_array)
    text[sz] = 0;  //null terminator
    this->text = text;
 }
-
+// This sucks
 String::~String()
 {
    delete[] text;
