@@ -12,7 +12,7 @@ ReadFile* createReadFile(const char* file_name)
 
    return rf;
 }
-//comment
+//why are we doing this?
 void destroyReadFile(ReadFile* rf)
 {
    close(rf);
