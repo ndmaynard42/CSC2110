@@ -14,6 +14,11 @@ class ReadFile // Switched to a class
     bool closed;
 
 	public: // Made public
+	// this is  constructor
+	ReadFile (const char* file_name);
+	//deconstructor
+	~ReadFile ();
+	
 	ReadFile* createReadFile(const char* file_name);
 	void destroyReadFile(ReadFile* rf);
 	String* readLine(ReadFile* rf);
