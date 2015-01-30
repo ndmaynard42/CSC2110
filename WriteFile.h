@@ -6,16 +6,17 @@
 #include <fstream>
 using namespace std;
 
-class WriteFile
+class WriteFile //Switched to a class
 {
-    private:
+    private: // Made Private
     ofstream output_file;
     bool closed;
 
-	public:
+	public: // Made Public
 	WriteFile* createWriteFile(const char* file_name);
 	void destroyWriteFile(WriteFile* wf);
 	void writeLine(WriteFile* wf, String* line);
 	void close(WriteFile* wf);
+	WriteFile();  // This is the constructor
 };
 #endif
