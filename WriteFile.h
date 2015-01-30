@@ -8,14 +8,14 @@ using namespace std;
 
 class WriteFile
 {
-   public:
-   ofstream output_file;
-   bool closed;
+    private:
+    ofstream output_file;
+    bool closed;
+
+	public:
+	WriteFile* createWriteFile(const char* file_name);
+	void destroyWriteFile(WriteFile* wf);
+	void writeLine(WriteFile* wf, String* line);
+	void close(WriteFile* wf);
 };
-
-WriteFile* createWriteFile(const char* file_name);
-void destroyWriteFile(WriteFile* wf);
-void writeLine(WriteFile* wf, String* line);
-void close(WriteFile* wf);
-
 #endif
