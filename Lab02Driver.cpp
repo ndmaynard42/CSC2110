@@ -6,6 +6,9 @@
 #include <iostream>
 int main()
 {
+   ReadFile ReadFile;
+   WriteFile WriteFile;
+   
    ReadFile* rf = new ReadFile("cds.txt");
    WriteFile* wf = new WriteFile("out.txt");
 
